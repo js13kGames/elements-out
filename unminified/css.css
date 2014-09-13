@@ -5,6 +5,7 @@
 }
 div > cell {
     flex: 1;
+    transition:background-color 0.1s;
 }
 li > cell {
     height:30px;
