@@ -144,7 +144,7 @@ function genRand(name, w, h, v, clicks) {
         lvl[4].push((Math.random() * w) | 0, (Math.random() * h) | 0, 1);
     }
     lvl[4]=lvl[4].join('.');
-    lvl = lvl.join('.');
+    return lvl.join('.');
 }
 
 importLevel.addEventListener('click', function () {
