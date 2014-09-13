@@ -5,7 +5,9 @@
 }
 div > cell {
     flex: 1;
-    transition:background-color 0.1s;
+    -webkit-flex:1;
+    transition:background-color 0.15s;
+    -webkit-transition:background-color 0.15s;
 }
 li > cell {
     height:30px;
@@ -17,14 +19,19 @@ cell:hover{
 }
 #t{
   display:flex;
+  display:-webkit-flex;
   flex-direction:column;
+  -webkit-flex-direction:column;
   width:400px;
   height:400px;
 }
 #t>div{
   display:flex;
+  display:-webkit-flex;
   flex:1;
+  -webkit-flex:1;
   flex-direction:row;
+  -webkit-flex-direction:row;
 }
 #container{
   margin:auto;
@@ -46,6 +53,7 @@ input, #edit{
   color:black;
   padding:3px;
   font-family:Courier;
+  border-radius:0;
 }
 input:hover, #edit:hover{
   cursor:pointer;
@@ -79,6 +87,11 @@ h1{
   width:100px;
   list-style-type:none;
   padding:0;
+}
+@media screen and (max-width:733px) {
+    #colorsDisplay {
+        display:none;
+    }
 }
 #colorsDisplay>li{
     padding:10px;
