@@ -143,7 +143,6 @@ function genRand(name, w, h, v, clicks) {
     for (var i = 0; i < clicks; ++i) {
         lvl[4].push((Math.random() * w) | 0, (Math.random() * h) | 0, 1);
     }
-    lvl[4]=lvl[4].join('.');
     return lvl.join('.');
 }
 
